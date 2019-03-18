@@ -34,7 +34,7 @@ function isEven(target){
         else {
             return find(current-2, '(${history} - 2)');
         }
-    }//`(${history} + 5)
+    }
     return find(target, "${target}");
 }
 
