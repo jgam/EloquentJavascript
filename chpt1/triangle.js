@@ -21,3 +21,12 @@ for(let i = 1; i < 101; i++){
       console.log(i);
     }
   };
+
+function add(num1,num2){
+    var sum = num1 + num2;
+    return sum;
+}
+var result = add(10, 20); //30
+alert(result);  // Error
+
+
