@@ -1161,12 +1161,19 @@ function repeat(n, action) {
 
 
   function characterCount(script) {
+    //console.log('count from to', count, from, to)
     return script.ranges.reduce((count, [from, to]) => {
+        console.log('count from to count from to',count,from,to)
       return count + (to - from);
     }, 0);
   }
   
   console.log(SCRIPTS.reduce((a, b) => {
+    //console.log('herehereherehere',a,b)
     return characterCount(a) < characterCount(b) ? b : a;
   }));
   // → {name: "Han", …}
+
+  console.log(SCRIPTS[0].ranges);
+  
+  console.log(8 < 9 ? true: false);
