@@ -44,4 +44,21 @@ console.log(isEven(-1));//odd
 //history to be printed?
 
 
+// Bean counting
+function countChar(input, character){
+    let ret_count = 0;
+    for (let i = 0; i < input.length; i++){
+        //this is the for loop
+        if(input[i] == character){
+            ret_count += 1;
+        }
+    }
+    return ret_count
+}
 
+function countBs(input){
+    return countChar(input, "B");
+}
+
+console.log(countBs("BBC"));//2
+console.log(countChar("ABCDD", "D"));//2
