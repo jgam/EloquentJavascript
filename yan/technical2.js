@@ -21,17 +21,14 @@ var addOne = function(x) {
   return x + 1;
 };
 
-var compose = function(a, b){
-    return b(a());
+function compose(a, b){
+    return v => b(a(v));//the variable m is the input that is taken after variable declaration
 }
 
 var foo = compose(multiplyTwo, addOne);
-console.log(typeof(compose(multiplyTwo, addOne)))
-//console.log(foo(5)); // should return 11
-//console.log(foo(10)); // should return 21
-
-console.log(typeof(addOne))
-console.log(typeof(compose))
+//onsole.log(typeof(compose(multiplyTwo, addOne)))
 console.log(typeof(foo))
-//console.log(foo(5))
+console.log(foo(5)); // should return 11
+console.log(foo(10)); // should return 21
+
 
