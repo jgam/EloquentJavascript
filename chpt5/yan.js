@@ -15,10 +15,15 @@ var addOne = function(x) {
   return x + 1;
 };
 
-function compose (funcA, funcB) {
-  funcB(funcA());
+var compose = function(A,B) {
+  return B(A);
 }
 
-var foo = compose(multiplyTwo, addOne);
+var foo = function(x){
+    return compose(multiplyTwo(x), addOne);
+}
+
 console.log(foo(5)); // should return 11
 console.log(foo(10)); // should return 21
+
+//console.log(compose(multiplyTwo(2), addOne))
