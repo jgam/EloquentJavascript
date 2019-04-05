@@ -8,9 +8,12 @@ function Node(data) {
     let count = 0
     let tmp_node = head
     console.log(tmp_node);
+    //taking the exceptions
     if (head == null){
       return 0;
     }
+    
+    //actual logic of counting the nodes by going deeper into the node
     while(true){
       if (tmp_node.next != null){
         tmp_node = tmp_node.next;
@@ -30,9 +33,13 @@ function Node(data) {
     var map = {};
     let tmp_node = head;
     console.log(tmp_node);
+    
+    //taking the exceptions
     if (tmp_node == null){
       return 0;
     }
+
+    //put the nums in a hash map to count occurrences of each unique num
     while(true){
       if(tmp_node.next != null){
         if (tmp_node.data in map){
@@ -56,5 +63,6 @@ function Node(data) {
         break;
       }
     }
+    //return hash map
     return map[data];
   }
