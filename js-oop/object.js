@@ -65,3 +65,7 @@ console.log("lee.sum()", lee.sum());
 
 //by creating constructore function, we can mass produce objects with different inputs
 //and save it to variables
+
+//constructor: setting the structure of object to mass produce them
+//pros : we can create easily many objects
+
