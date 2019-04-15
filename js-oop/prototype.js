@@ -28,3 +28,18 @@ console.log("lee.sum()", lee.sum());
 //prototype 안썼을때 일어나는 문제점?
 //1억개의 개체가있을때, 이 개체마다 새로운 매쏘드를 선언하여야함으로, prototype으로 code reusability를 만족시킬수있다.
 
+//class
+//factory that creates objects
+//constructor actually creates settings
+class Person{
+    //when creating method, we don't use function
+    //sum()
+    //before we create objects, we need to create something -> constructor
+    constructor(){
+        console.log('constructor')
+    }
+
+}
+
+var kim = new Person();
+console.log('kim', kim);
